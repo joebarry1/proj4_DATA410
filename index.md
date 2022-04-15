@@ -123,7 +123,8 @@ kfolds.append(kfold_mse(RF, RF, X, y))
 
 ## Results
 
-PLOT 1
+<img src="Plot1.PNG" width="400" height="400" alt="hi" class="inline"/>
+
 
 As shown in the figure above, there is great variance in the MSE's of the various boosted regression algorithms tested. An OLS-OLS model was by far the least effective. This makes sense, as OLS does not benefit from the booster; the model of residuals is negligible due to the nature of the regression method. Of the remaining algorithms, the biggest factor in efficacy seems to be the presence of a neural network, especially as a booster. This algorithm's ability to deal with erratic relationships, such as those in residual data, may contribute to this. The most effective algorithm, albeit marginally, was the NN-NN algorithm. This surprised me; I expected to see a combination of algorithms to compliment themselves stronger than any which was used for both *f* and *h*. The simplest conclusion is that NN are very effective with the data we are working with.
 
